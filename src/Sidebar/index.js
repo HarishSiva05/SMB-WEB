@@ -73,14 +73,14 @@ const SidebarContainer = styled.div`
   position: relative;
 `;
 
-const Logo = styled.div`
-  width: 2rem;
+// const Logo = styled.div`
+//   width: 2rem;
 
-  img {
-    width: 100%;
-    height: auto;
-  }
-`;
+//   img {
+//     width: 100%;
+//     height: auto;
+//   }
+// `;
 
 const SlickBar = styled.ul`
   color: var(--white);
@@ -143,8 +143,8 @@ const Sidebar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
-  const [profileClick, setprofileClick] = useState(false);
-  const handleProfileClick = () => setprofileClick(!profileClick);
+ // const [profileClick, setprofileClick] = useState(false);
+ // const handleProfileClick = () => setprofileClick(!profileClick);
 
   return (
     <Container>
@@ -174,7 +174,7 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/team"
+            to="/report"
           >
             <img src={Report} alt="Report" />
             <Text clicked={click}>Report</Text>
@@ -183,7 +183,7 @@ const Sidebar = () => {
           <Item
             onClick={() => setClick(false)}
             activeClassName="active"
-            to="/documents"
+            to="/invoice"
           >
             <img src={Invoice} alt="Invoice" />
             <Text clicked={click}>Invoice</Text>
