@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-
-
-
 import Home from "../assets/home-solid.svg";
 import Report from "../assets/social.svg";
 import Calender from "../assets/sceduled.svg";

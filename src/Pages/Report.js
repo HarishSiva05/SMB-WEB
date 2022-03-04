@@ -1,7 +1,7 @@
 import MotionHoc from "./MotionHoc";
 
 const ReportComponent = () => {
-  return <h1>Team</h1>;
+  return <h1>Report</h1>;
 };
 
 const Report = MotionHoc(ReportComponent);
