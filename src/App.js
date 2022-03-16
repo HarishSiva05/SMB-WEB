@@ -1,5 +1,7 @@
 import { Route, 
+         Switch,
          Routes, 
+
          useLocation } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Home from "./Pages/Home";
@@ -26,13 +28,13 @@ function App() {
       <Sidebar />
       <Pages>
         <AnimatePresence exitBeforeEnter>
-          <Routes location={location} key={location.pathname}>
+          <Switch uselocation={location} key={location.pathname}>
             <Route exact path="/" component={Home} />
             <Route path="/calender" component={Calender} />
             <Route path="/report" component={Report} />
             <Route path="/inovice" component={Invoice} />
            
-          </Routes>
+          </Switch>
         </AnimatePresence>
       </Pages>
     </>
